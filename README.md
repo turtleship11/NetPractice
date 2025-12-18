@@ -1,161 +1,112 @@
-NetPractice
+# 🌐 NetPractice
 
-*This project was completed as part of the 42 curriculum by jaeklee.*
+*This project has been created as part of the 42 curriculum by jaeklee.*
 
-Project Overview
+---
 
-NetPractice is a hands-on networking project designed to help students understand how computer networks operate. The project consists of solving networking issues using an interactive graphical interface. Each exercise presents a broken network setup that must be fixed by correctly configuring networking components.
+## Description
 
-There are 10 levels, each increasing in difficulty. At every level, the goal is to analyze the network diagram, apply proper configurations, and ensure that communication between devices works as expected.
+NetPractice is a hands-on networking project designed to help students understand how computer networks operate.  
+The project focuses on fixing broken network configurations using an interactive graphical interface.
 
-Through this project, students gain practical experience with key networking topics such as IP addressing, subnet masks, routing, switches, OSI layers, and network troubleshooting. Once a level is successfully completed, its configuration must be exported and saved for submission.
+The project consists of **10 progressively challenging levels**.  
+Each level presents a **non-functional network diagram** that must be corrected by properly configuring networking components.
 
-How to Use the Project
-Downloading the Project
+The main goal is to analyze the network, apply correct configurations, and ensure that communication between devices works as expected.
 
-Download the project files from the official source.
+Through this project, students gain practical experience with:
+- IP addressing
+- Subnet masks
+- Routing
+- Switches
+- OSI layers
+- Network troubleshooting
 
-Extract the contents into a directory of your choice.
+Once a level is successfully completed, its configuration must be **exported and saved** for submission.
 
-Launching the Training Interface
+---
 
-Open the extracted folder.
+## Instructions
 
-Launch the project by opening the index.html file in a web browser.
+### Running the Training Interface
 
-Working with the Interface
+1. Download the NetPractice project files from the official source.
+2. Extract the contents into a directory of your choice.
+3. Open the extracted folder.
+4. Launch the training interface by opening the `index.html` file in a web browser.
 
-Enter your 42 login in the input field to personalize your setup.
+### Using the Interface
 
-The Evaluation tab allows you to generate randomized configurations for additional practice.
+- Enter your **42 login** in the input field to personalize the session.
+- The **Evaluation** tab allows you to generate randomized network configurations for additional practice.
+- Each level displays a broken network setup that must be fixed.
 
-Each level displays a non-working network diagram that must be corrected.
+### Completing the Levels
 
-Completing the Levels
+- There are **10 levels** in total.
+- Depending on the level, you may need to:
+  - Assign correct IP addresses
+  - Choose appropriate subnet masks
+  - Configure routers and default gateways
 
-There are 10 levels in total.
+To validate a solution:
+- Click **[Check again]** to verify the configuration.
+- When the configuration is correct, click **[Get my config]** to export it.
 
-Each level provides specific objectives, such as:
+### Exporting and Submission Requirements
 
-Assigning correct IP addresses
+- Export **one configuration file per level**
+- A total of **10 exported configuration files** must be provided
+- All configuration files **must be placed at the root of the Git repository**
 
-Choosing appropriate subnet masks
+The repository must also include a `README.md` file describing the project.
 
-Configuring routers and gateways
+---
 
-Use the [Check again] button to verify your solution.
+## Resources
 
-When the configuration is valid, click [Get my config] to export it.
+### Networking Concepts Studied
 
-Exporting Configurations
+This project covers the following networking fundamentals:
 
-Export one configuration file per level.
+- **TCP/IP Addressing**  
+  Each device requires a unique IP address to communicate within a network.
 
-Make sure all 10 configuration files are saved at the root of your Git repository.
+- **Subnet Masks and CIDR Notation**  
+  Used to define network and host portions of an IP address and to divide networks into subnets.
 
-Submission Guidelines
+- **Default Gateway**  
+  Enables communication between different networks by forwarding traffic outside the local network.
 
-To submit the project successfully:
+- **Routers and Switches**  
+  Routers connect multiple networks and forward packets, while switches connect devices within the same local network.
 
-Include 10 exported configuration files, one for each level, in the root directory.
+- **Routing Tables**  
+  Define destination networks and next-hop paths to ensure correct packet forwarding.
 
-Add a README.md file describing the project and its purpose.
+- **OSI Model**  
+  Understanding the seven-layer OSI model helps identify where communication issues occur.
 
-Networking Concepts Covered
-IP Addressing (TCP/IP)
+### References
 
-Every device connected to a network requires a unique IP address to communicate. IPv4 addresses (such as 192.168.0.1) allow devices to locate and exchange data with each other. Devices on the same network can communicate directly, while communication between different networks must pass through a router.
+- TCP/IP Networking Model documentation  
+- Subnetting and CIDR notation tutorials  
+- NetPractice official documentation  
+- OSI Model overview and networking fundamentals
 
-Subnet Masks
+### Use of AI Tools
 
-A subnet mask defines which part of an IP address represents the network and which part identifies the host. In NetPractice, subnetting is essential for:
+AI tools were used strictly as **learning support** during the project to:
+- Improve understanding of networking fundamentals
+- Clarify subnetting calculations and routing behavior
+- Validate reasoning while troubleshooting network configurations
 
-Determining which devices belong to the same network
+No automated solutions were generated using AI tools.  
+All configurations were designed, tested, and completed **manually**.
 
-Dividing networks into smaller subnets
+---
 
-Preventing address conflicts and overlapping networks
+## Conclusion
 
-Subnet masks are often expressed using CIDR notation (for example /24, /28).
-
-Default Gateway
-
-The default gateway is the device responsible for forwarding traffic outside the local network. When a host needs to communicate with a different network, it sends packets to the gateway—typically a router. Without a correct default gateway, external communication is impossible.
-
-Routers
-
-Routers are used to interconnect separate networks. Each router interface belongs to a distinct network and helps forward data between them. In this project, routers are configured to:
-
-Connect multiple networks
-
-Forward packets correctly
-
-Use routing information to determine the best path
-
-Switches
-
-Switches operate within a local network and connect multiple devices together. They enable communication between devices that share the same network and subnet. Switches do not perform routing and cannot connect different networks.
-
-Routing Tables
-
-A routing table acts as a reference map for a device, showing:
-
-The destination network
-
-The next hop to reach that destination
-
-Proper routing tables are necessary to ensure data can travel to and from all networks without interruption.
-
-OSI Model Overview
-
-The OSI model explains how network communication works by dividing it into seven layers:
-
-Physical Layer – Manages hardware components such as cables and signals.
-
-Data Link Layer – Handles MAC addressing, error detection, and switching.
-
-Network Layer – Responsible for IP addressing, subnetting, and routing.
-
-Transport Layer – Ensures reliable or fast data transmission using TCP or UDP.
-
-Session Layer – Manages communication sessions between devices.
-
-Presentation Layer – Formats, encrypts, and compresses data.
-
-Application Layer – Provides network services to applications like browsers and email clients.
-
-Understanding these layers helps identify where network communication problems occur.
-
-References
-
-TCP/IP Networking Model
-
-Subnetting Basics
-
-NetPractice Documentation
-
-OSI Model Overview
-
-Use of AI Tools
-
-AI tools were used strictly as a learning support to:
-
-Improve understanding of networking fundamentals
-
-Clarify subnetting calculations and routing behavior
-
-Validate reasoning during problem-solving
-
-No automated solutions were generated, and all configurations were completed manually.
-
-If you want, I can also:
-
-Shorten this version
-
-Make it more “42-style” minimal
-
-Adjust tone (more technical / more beginner-friendly)
-
-Format it exactly for Markdown submission
-
-Just tell me 👍
+NetPractice provides a strong foundation in computer networking through hands-on problem solving.  
+It reinforces theoretical knowledge while developing practical skills in network configuration and troubleshooting.
