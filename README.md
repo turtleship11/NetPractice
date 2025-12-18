@@ -85,12 +85,12 @@ This project covers the following networking fundamentals:
   Define destination networks and next-hop paths to ensure correct packet forwarding.
 
 - **OSI Model**  
-  Understanding the seven-layer OSI model helps identify where communication issues occur.
+  The seven-layer OSI model provides a structured way to understand how data moves through a network. By separating communication into distinct layers, it helps identify where failures occur (hardware, addressing, routing, or transport), making network analysis and troubleshooting more precise.
 
 ### References
 
 - TCP/IP Networking Model documentation  
-- Subnetting and CIDR notation tutorials  
+- Subnetting tutorials  
 - NetPractice official documentation  
 - OSI Model overview and networking fundamentals
 
